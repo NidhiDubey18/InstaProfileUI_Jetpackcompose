@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyInstagramProfile</string>
+    <string name="userName">Nidhi Dubey</string>
+    <string name="userId">nidhidubey</string>
+    <string name="New">New</string>
+    <string name="userBio">Welcome to Insta profile</string>
+    <string name="Archived_Post">Welcome to Archived Post</string>
+    <string name="Post">posts</string>
+    <string name="Followers">followers</string>
+    <string name="Following">following</string>
+    <string name="highlight1">Indore</string>
+    <string name="highlight2">Mumbai</string>
+    <string name="highlight3">Delhi</string>
+    <string name="highlight4">Pune</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="Share_Profile">Share Profile</string>
+    <string name="Msg">Message Clicked</string>
+    <string name="Drawer">Drawer Clicked"</string>
+    <string name="Profile">Profile Clicked</string>
+
+</resources>
