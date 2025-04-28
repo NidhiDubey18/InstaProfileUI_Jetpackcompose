@@ -40,7 +40,7 @@ fun InstagramProfileScreen() {
         userName = stringResource(R.string.userName),
         userBio = stringResource(R.string.userBio),
         userProfilePicture = R.drawable.avatar,
-        userPost = 5,
+        userPost = 12,
         userFollowers = 10,
         userFollowing = 10
     )

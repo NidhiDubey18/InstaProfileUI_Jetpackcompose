@@ -12,8 +12,8 @@
     <string name="highlight2">Mumbai</string>
     <string name="highlight3">Delhi</string>
     <string name="highlight4">Pune</string>
-    <string name="Edit_Profile">Edit Profile</string>
-    <string name="Share_Profile">Share Profile</string>
+    <string name="Edit_Profile">Edit profile</string>
+    <string name="Share_Profile">Share profile</string>
     <string name="Msg">Message Clicked</string>
     <string name="Drawer">Drawer Clicked"</string>
     <string name="Profile">Profile Clicked</string>

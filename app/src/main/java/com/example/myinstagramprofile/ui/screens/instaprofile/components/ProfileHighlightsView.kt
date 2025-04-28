@@ -40,7 +40,7 @@ fun ProfileHighlightsView(highlights: List<UserProfileHighlights>) {
                 Box(
                     contentAlignment = Alignment.Center,
                     modifier = Modifier
-                        .size(90.dp)
+                        .size(80.dp)
                         .clip(CircleShape)
                         .border(2.dp, color = Color.Black, shape = CircleShape)
                         .align(Alignment.CenterHorizontally)
@@ -51,10 +51,10 @@ fun ProfileHighlightsView(highlights: List<UserProfileHighlights>) {
                         modifier = Modifier.size(24.dp)
                     )
                 }
-                Spacer(modifier = Modifier.padding(8.dp))
+                Spacer(modifier = Modifier.padding(5.dp))
                 CommonTextComponent(
                     text = stringResource(R.string.New),
-                    fontWeight = FontWeight.SemiBold,
+                    fontWeight = FontWeight.Normal,
                     fontSize = 15.sp
                 )
             }
@@ -70,20 +70,20 @@ fun ProfileHighlightsView(highlights: List<UserProfileHighlights>) {
                     painter = painterResource(id = highlights[indices].highlights),
                     contentDescription = "",
                     modifier = Modifier
-                        .size(90.dp)
+                        .size(80.dp)
                         .clip(CircleShape)
-                        .border(2.dp, Color.LightGray, CircleShape)
+                        .border(1.dp, Color.LightGray, CircleShape)
                         .padding(5.dp),
                     contentScale = ContentScale.Crop
                 )
                 Spacer(
                     modifier = Modifier.padding(
-                        8.dp
+                        5.dp
                     )
                 )
                 CommonTextComponent(
                     text = highlights[indices].highlightText,
-                    fontWeight = FontWeight.SemiBold,
+                    fontWeight = FontWeight.Normal,
                     fontSize = 15.sp
                 )
             }

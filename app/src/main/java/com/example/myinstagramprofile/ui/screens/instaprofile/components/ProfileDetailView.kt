@@ -1,6 +1,5 @@
 package com.example.myinstagramprofile.ui.screens.instaprofile.components
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -17,7 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -33,7 +31,7 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(10.dp, 5.dp, 5.dp, 5.dp),
+            .padding(15.dp, 5.dp, 5.dp, 5.dp),
     ) {
         Row(
             modifier = Modifier.fillMaxWidth()
@@ -41,10 +39,9 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
             Box(
                 modifier = Modifier.size(80.dp)
             ) {
-                Image(
+                CommonImageComponent(
                     painter = painterResource(id = userProfileDetails.userProfilePicture),
                     contentDescription = "Profile Image",
-                    contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .size(100.dp)
                         .clip(CircleShape)
@@ -65,14 +62,14 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(15.dp, 15.dp, 15.dp, 0.dp)
+                    .padding(20.dp, 15.dp, 15.dp, 0.dp)
             ) {
                 // getting yellow alert because it is already initialized
                 userProfileDetails.userName.let {
                     CommonTextComponent(
                         text = userProfileDetails.userName,
                         fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.SemiBold
                     )
                 }
 
@@ -86,10 +83,10 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
                     ) {
                         CommonTextComponent(
                             text = userProfileDetails.userPost.toString(),
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Normal
                         )
                         CommonTextComponent(
-                            text = stringResource(R.string.Post), fontWeight = FontWeight.Bold
+                            text = stringResource(R.string.Post), fontWeight = FontWeight.Normal
                         )
                     }
 
@@ -98,11 +95,12 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
                     ) {
                         CommonTextComponent(
                             text = userProfileDetails.userFollowing.toString(),
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Normal
                         )
 
                         CommonTextComponent(
-                            text = stringResource(R.string.Following), fontWeight = FontWeight.Bold
+                            text = stringResource(R.string.Following),
+                            fontWeight = FontWeight.Normal
                         )
                     }
 
@@ -112,11 +110,12 @@ fun ProfileDetailView(userProfileDetails: UserProfileDetails) {
 
                         CommonTextComponent(
                             text = userProfileDetails.userFollowers.toString(),
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Normal
                         )
 
                         CommonTextComponent(
-                            text = stringResource(R.string.Followers), fontWeight = FontWeight.Bold
+                            text = stringResource(R.string.Followers),
+                            fontWeight = FontWeight.Normal
                         )
                     }
                 }

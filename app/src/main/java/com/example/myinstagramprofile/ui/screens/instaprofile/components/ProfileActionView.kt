@@ -32,14 +32,14 @@ fun ProfileActionView(context: Context) {
         val modifier = Modifier
             .padding(10.dp, 0.dp, 0.dp, 0.dp)
             .height(40.dp)
-            .border(2.dp, color = Color.Black, shape = RoundedCornerShape(6.dp))
+            .border(1.dp, color = Color.Black, shape = RoundedCornerShape(6.dp))
             .wrapContentSize(Alignment.Center)
             .padding(20.dp, 0.dp, 20.dp, 0.dp)
 
         Box(modifier = modifier.weight(1f)) {
             CommonTextComponent(text = stringResource(R.string.Edit_Profile),
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Normal,
                 modifier = Modifier.clickable {
                     Toast.makeText(
                         context,
@@ -51,8 +51,8 @@ fun ProfileActionView(context: Context) {
 
         Box(modifier = modifier.weight(1f)) {
             CommonTextComponent(text = stringResource(R.string.Share_Profile),
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Normal,
                 modifier = Modifier.clickable {
                     Toast.makeText(context, R.string.Share_Profile, Toast.LENGTH_SHORT).show()
                 })
